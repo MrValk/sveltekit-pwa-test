@@ -1,6 +1,8 @@
 <script>
 	import Fa from 'svelte-fa';
-	import { faHouse, faNewspaper, faPlus, faBell, faUser } from '@fortawesome/free-solid-svg-icons';
+	import { faHouse, faNewspaper, faPlus, faBell, faSun } from '@fortawesome/free-solid-svg-icons';
+
+	import switchTheme from '$scripts/themeSwitcher';
 </script>
 
 <nav class="flex justify-around w-full h-20 mt-auto">
@@ -16,7 +18,7 @@
 	<button>
 		<Fa icon={faBell} />
 	</button>
-	<button>
-		<Fa icon={faUser} />
+	<button on:click={switchTheme}>
+		<Fa icon={faSun} />
 	</button>
 </nav>

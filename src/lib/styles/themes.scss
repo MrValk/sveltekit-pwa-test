@@ -1,0 +1,46 @@
+:root {
+	--bg-color: white;
+	--text-color: black;
+	--secondary-color: #e5e7eb;
+	--accent-color: #92400e;
+}
+
+.dark-theme {
+	--bg-color: black;
+	--text-color: white;
+	--secondary-color: #1f2937;
+	--accent-color: #92400e;
+}
+
+$bg-color: var(--bg-color);
+$text-color: var(--text-color);
+$secondary-color: var(--secondary-color);
+$accent-color: var(--accent-color);
+
+$transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+
+.wrapper {
+	background-color: $bg-color;
+	color: $text-color;
+	transition: $transition;
+}
+
+.bg-color {
+	background-color: $bg-color;
+	transition: $transition;
+}
+
+.text-color {
+	color: $text-color;
+	transition: $transition;
+}
+
+.secondary-color {
+	background-color: $secondary-color;
+	transition: $transition;
+}
+
+.accent-color {
+	background-color: $accent-color;
+	transition: $transition;
+}
