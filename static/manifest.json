@@ -1,15 +1,35 @@
 {
+	"name": "SvelteKit PWA",
 	"short_name": "sveltekit-pwa",
-	"name": "sveltekit-pwa-ui-test",
 	"start_url": "/",
 	"icons": [
 		{
-			"src": "icon.png",
+			"src": "static/icons/manifest-icon-192.maskable.png",
+			"sizes": "192x192",
 			"type": "image/png",
-			"sizes": "512x512"
+			"purpose": "any"
+		},
+		{
+			"src": "static/icons/manifest-icon-192.maskable.png",
+			"sizes": "192x192",
+			"type": "image/png",
+			"purpose": "maskable"
+		},
+		{
+			"src": "static/icons/manifest-icon-512.maskable.png",
+			"sizes": "512x512",
+			"type": "image/png",
+			"purpose": "any"
+		},
+		{
+			"src": "static/icons/manifest-icon-512.maskable.png",
+			"sizes": "512x512",
+			"type": "image/png",
+			"purpose": "maskable"
 		}
 	],
-	"display": "standalone",
-	"scope": "/",
+	"theme_color": "#f3f4f6",
+	"background_color": "#fefefe",
+	"display": "fullscreen",
 	"description": "A simple test of a SvelteKit PWA"
 }
