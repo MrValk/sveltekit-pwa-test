@@ -3,11 +3,18 @@
 	import { faMagnifyingGlass, faUser } from '@fortawesome/free-solid-svg-icons';
 </script>
 
-<header class="flex justify-between items-center w-full h-20 px-4 gap-4">
-	<form class="flex-auto flex rounded-full secondary-color h-12 min-w-0" on:submit|preventDefault>
+<header class="flex justify-between items-center w-full py-2 px-4 gap-4 primary-color shadow-sm">
+	<form
+		class="flex-auto flex rounded-full secondary-color h-12 min-w-0 overflow-hidden"
+		on:submit|preventDefault
+	>
 		<img src="header-icon.svg" alt="logo" width="32" class="mx-4" />
-		<input type="text" placeholder="Search..." class="flex-auto bg-transparent min-w-48" />
-		<button class="aspect-square flex justify-center items-center">
+		<input
+			type="text"
+			placeholder="Search..."
+			class="flex-auto bg-transparent min-w-48 outline-none"
+		/>
+		<button class="aspect-square flex justify-center items-center rounded-full">
 			<Fa icon={faMagnifyingGlass} />
 		</button>
 	</form>

@@ -1,19 +1,22 @@
 :root {
-	--bg-color: white;
-	--text-color: black;
+	--bg-color: #fefefe;
+	--text-color: #0a0a0a;
+	--primary-color: #f3f4f6;
 	--secondary-color: #e5e7eb;
 	--accent-color: #92400e;
 }
 
-.dark-theme {
-	--bg-color: black;
-	--text-color: white;
-	--secondary-color: #1f2937;
+.dark {
+	--bg-color: #0a0a0a;
+	--text-color: #e2e2e2;
+	--primary-color: #0e0f0f;
+	--secondary-color: #17181a;
 	--accent-color: #92400e;
 }
 
 $bg-color: var(--bg-color);
 $text-color: var(--text-color);
+$primary-color: var(--primary-color);
 $secondary-color: var(--secondary-color);
 $accent-color: var(--accent-color);
 
@@ -32,6 +35,11 @@ $transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 
 .text-color {
 	color: $text-color;
+	transition: $transition;
+}
+
+.primary-color {
+	background-color: $primary-color;
 	transition: $transition;
 }
 
