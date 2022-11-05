@@ -1,0 +1,15 @@
+{
+	"short_name": "sveltekit-pwa",
+	"name": "sveltekit-pwa-ui-test",
+	"start_url": "/",
+	"icons": [
+		{
+			"src": "icon.png",
+			"type": "image/png",
+			"sizes": "512x512"
+		}
+	],
+	"display": "standalone",
+	"scope": "/",
+	"description": "A simple test of a SvelteKit PWA"
+}
