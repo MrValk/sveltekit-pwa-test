@@ -13,19 +13,19 @@
 </script>
 
 <nav class="flex justify-around items-center w-full h-20 mt-auto primary-color">
-	<button>
+	<button aria-label="Home">
 		<Fa icon={faHouse} />
 	</button>
-	<button>
+	<button aria-label="News">
 		<Fa icon={faNewspaper} />
 	</button>
-	<button>
+	<button aria-label="New Post">
 		<Fa icon={faPlus} />
 	</button>
-	<button>
+	<button aria-label="Notifications">
 		<Fa icon={faBell} />
 	</button>
-	<button on:click={toggleTheme}>
+	<button on:click={toggleTheme} aria-label="Toggle Theme">
 		{#if $theme == 'light'}
 			<Fa icon={faSun} />
 		{:else}
